@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   --foreground-rgb: 0, 0, 0;
+   --background-start-rgb: 214, 219, 220;
+   --background-end-rgb: 255, 255, 255;
+   --main-color: #2196F3;
+   --gray: #86868b;
+   --p10: 10px;
+   --p100: 100px;
+   --global-card-corner-radius: 28px;
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
+   }
+
+   p,
+   span {
+      color: black;
+   }
+}
+
+@media (prefers-color-scheme:light) {
+
+   p,
+   span {
+      color: white;
+   }
+}
+
+@media (min-width: 1024px) {
+   .buttonsize {
+      font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 10px) {
+   .buttonsize {
+      font-size: 1.2rem;
+   }
+}
+
+.card {
+   border-radius: var(--global-card-corner-radius);
+   background-color: rgb(245, 245, 247);
+}
+
+.card-begin {
+   width: 1260px;
+   height: calc(4 * var(--p100));
+   border-radius: var(--global-card-corner-radius);
+   background-color: rgb(245, 245, 247);
+}
+
+.indent-zh {
+   text-indent: 2.7rem;
+}
